@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WordBoX</title>
+  
+
+  
+<link rel="icon" type="image/png" href="IMG/speech-bubble.png" sizes="32x32">
+
+    <link rel="manifest" href="manifest.json">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="hello">
+    <h1 class="hi">WordBoX</h1>
+  </div>
+  <div class="learn">
+    <img class="ion" src="IMG/ion.png" alt="ion" >
+    <div class="hi2">
+      <h1 class="hi3">Привіт👋</h1>
+      <p class="hi4">Я — твій новий друг для вивчення слів!
+Разом ми вивчимо нові слова весело та легко ✨ </p>
+
+    </div>
+    <h1 class="hi5" >Гарного навчання!</h1>
+    
+    
+    
+      <div class="share_global">
+             <img class="remove" src="IMG/cross.png" alt="remove" onclick="black1()"/>
+             <h1></h1>
+         </div>
+         
+         
+         
+    <div id="left_dictionary" class ="left_dictionary" >
+      <img class="ion2" src="IMG/ion.png" alt="ion">
+    <button class="button_know" onclick="location='Dictionary/dictionary.html'" type="submit">ЗРОЗУМІЛО!</button>
+      <img  class="viddil" src="IMG/open-book.png" alt="viddil">
+      <div class="left-massege_div">
+        <h1 class="h1">ВІТАЮ!</h1>
+             <h2 class="left-massege">Перейдіть у розділ "____" та вивчайте слова зручно...😉</h2> 
+
+      </div>
+
+    </div>
+    <button class="button_start" type="submit" onclick="flex()">START</button>
+         <div class="call" id="call">
+            <img class="remove" src="IMG/cross.png" alt="remove" onclick="black1()"/>
+            <h1 class="help-center">
+             help center
+                         </h1>
+             <div class="call_me" >
+               <img class="phone2" src="IMG/phone-call_1.png" alt="phone2" />
+               <h2 class=" phone-number">093 215 5391</h2>
+             </div>
+<div >
+  <img class="insta" src="IMG/instagram.png" alt="instagram" />
+  <h2 class="insta2">marchaknazar370</h2>
+</div>
+<img class="logo" src="IMG/logo.png" alt="logo">
+          </div>     
+  </div>
+  <div class="navigation">
+    <img class="home_img1" src="IMG/home.png" alt="home">
+        <img class="home_img" src="IMG/phone-call.png" alt="support" onclick="white1()">
+        <img class="home_img" src="IMG/open-book.png" onclick="location='/Dictionary/dictionary.html'" alt="">
+              
+                        <img class="home_img" src="IMG/menu-burger.png" alt="support">
+                        
+              
+  </div>
+    <script>
+      if ('serviceWorker' in navigator) {  
+        navigator.serviceWorker.register('./service-worker.js');
+      }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
